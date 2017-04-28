@@ -71,9 +71,13 @@
     if (ccStatus== kCCParamError) return @"PARAM ERROR";
     else if (ccStatus == kCCBufferTooSmall) return @"BUFFER TOO SMALL";
     else if (ccStatus == kCCMemoryFailure) return @"MEMORY FAILURE";
-    else if (ccStatus == kCCAlignmentError) return @"ALIGNMENT";
+    else if (ccStatus == kCCAlignmentError) return @"ALIGNMENT ERROR";
     else if (ccStatus == kCCDecodeError) return @"DECODE ERROR";
     else if (ccStatus == kCCUnimplemented) return @"UNIMPLEMENTED";
+    else if (ccStatus == kCCOverflow) return @"OVERFLOW";
+    else if (ccStatus == kCCRNGFailure) return @"RNG FAILURE";
+    else if (ccStatus == kCCUnspecifiedError) return @"UNSPECIFIED ERROR";
+    else if (ccStatus == kCCCallSequenceError) return @"CALL SEQUENCE ERROR";
     
     NSString * result;
     
